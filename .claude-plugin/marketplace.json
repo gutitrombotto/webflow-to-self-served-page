@@ -1,6 +1,6 @@
 {
   "name": "webflow-tools",
-  "owner": "gutitrombotto",
+  "owner": "filadd",
   "description": "Tools for converting Webflow exports to self-served pages",
   "plugins": [
     {
