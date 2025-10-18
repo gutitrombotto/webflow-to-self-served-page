@@ -1,0 +1,27 @@
+{
+  "description": "Optional hooks for automatic CSV to JSON conversion (opt-in)",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write:*.csv",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/utils/auto-convert-csv.sh",
+            "timeout": 30
+          }
+        ]
+      },
+      {
+        "matcher": "Edit:*.csv",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/utils/auto-convert-csv.sh",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

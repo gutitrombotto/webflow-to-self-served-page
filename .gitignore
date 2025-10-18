@@ -1,0 +1,23 @@
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test files
+test/
+tmp/
+*.tmp
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
