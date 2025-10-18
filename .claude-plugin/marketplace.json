@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "webflow-to-self-served-page",
-      "source": "gutitrombotto/webflow-to-self-served-page",
+      "source": "./",
       "version": "1.0.0",
       "description": "Convert Webflow exports with CSV CMS data to self-served static pages with dynamic content loading"
     }
