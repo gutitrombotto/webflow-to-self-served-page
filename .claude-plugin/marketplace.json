@@ -1,18 +1,13 @@
 {
-  "marketplaces": [
+  "name": "webflow-tools",
+  "owner": "gutitrombotto",
+  "description": "Tools for converting Webflow exports to self-served pages",
+  "plugins": [
     {
-      "name": "filadd-tools",
-      "description": "Filadd development tools and utilities",
-      "plugins": [
-        {
-          "name": "webflow-to-self-served-page",
-          "path": ".",
-          "version": "1.0.0",
-          "description": "Convert Webflow exports with CSV CMS data to self-served static pages",
-          "category": "conversion",
-          "tags": ["webflow", "cms", "static-site", "csv", "landing-page"]
-        }
-      ]
+      "name": "webflow-to-self-served-page",
+      "path": ".",
+      "version": "1.0.0",
+      "description": "Convert Webflow exports with CSV CMS data to self-served static pages with dynamic content loading"
     }
   ]
 }
