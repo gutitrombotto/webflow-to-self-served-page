@@ -1,0 +1,33 @@
+{
+  "name": "Webflow to Self-Served Page",
+  "description": "Official marketplace for Webflow conversion plugins",
+  "owner": {
+    "name": "Agustin Trombotto",
+    "email": "agustin@filadd.com"
+  },
+  "plugins": [
+    {
+      "name": "webflow-to-self-served-page",
+      "source": "./",
+      "description": "Convert Webflow exports with CSV CMS data to self-served static pages with dynamic content loading",
+      "version": "1.0.0",
+      "author": {
+        "name": "Agustin Trombotto",
+        "organization": "Filadd"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/gutitrombotto/webflow-to-self-served-page"
+      },
+      "keywords": [
+        "webflow",
+        "cms",
+        "static-site",
+        "csv",
+        "conversion",
+        "landing-page"
+      ],
+      "license": "MIT"
+    }
+  ]
+}

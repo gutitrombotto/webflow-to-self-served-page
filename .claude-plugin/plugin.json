@@ -10,6 +10,10 @@
     "type": "git",
     "url": "https://github.com/gutitrombotto/webflow-to-self-served-page"
   },
+  "homepage": "https://github.com/gutitrombotto/webflow-to-self-served-page#readme",
+  "bugs": {
+    "url": "https://github.com/gutitrombotto/webflow-to-self-served-page/issues"
+  },
   "keywords": [
     "webflow",
     "cms",

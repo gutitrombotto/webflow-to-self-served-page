@@ -4,16 +4,31 @@
 
 ### Step 1: Install the Plugin (One-Time Setup)
 
-First, you need to install the plugin. Since it's not on GitHub yet, use the local installation:
+#### Option A: Via Claude Code Marketplace (Recommended)
 
 ```bash
-# Option A: Link to your Claude plugins directory (recommended)
-mkdir -p ~/.claude/plugins
-ln -s /home/atrombotto/Documents/filadd/webflow-to-self-served-page \
-      ~/.claude/plugins/webflow-to-self-served-page
+# Add the plugin marketplace
+/plugin marketplace add gutitrombotto/webflow-to-self-served-page
 
-# Option B: Copy the plugin
-cp -r /home/atrombotto/Documents/filadd/webflow-to-self-served-page \
+# Install the plugin
+/plugin install webflow-to-self-served-page
+```
+
+#### Option B: Direct from GitHub
+
+```bash
+# Clone and link the plugin
+git clone https://github.com/gutitrombotto/webflow-to-self-served-page.git
+mkdir -p ~/.claude/plugins
+ln -s "$(pwd)/webflow-to-self-served-page" ~/.claude/plugins/
+```
+
+#### Option C: Local Development (for contributors)
+
+```bash
+# Link to your local development version
+mkdir -p ~/.claude/plugins
+ln -s /path/to/your/webflow-to-self-served-page \
       ~/.claude/plugins/webflow-to-self-served-page
 ```
 
@@ -395,9 +410,13 @@ That's it! The plugin handles everything else automatically. 🚀
 
 **Solution**:
 ```bash
-# Reinstall plugin
-ln -sf /home/atrombotto/Documents/filadd/webflow-to-self-served-page \
-       ~/.claude/plugins/webflow-to-self-served-page
+# Reinstall plugin via marketplace
+/plugin marketplace add gutitrombotto/webflow-to-self-served-page
+/plugin install webflow-to-self-served-page
+
+# Or reinstall manually
+git clone https://github.com/gutitrombotto/webflow-to-self-served-page.git
+ln -sf "$(pwd)/webflow-to-self-served-page" ~/.claude/plugins/
 
 # Restart Claude Code
 ```

@@ -4,9 +4,10 @@
 
 A Claude Code plugin that automates the conversion of exported Webflow landing pages into self-served static sites with dynamic content injection from CSV files.
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/filadd/webflow-to-self-served-page)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/gutitrombotto/webflow-to-self-served-page/releases)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-Plugin-purple.svg)](https://docs.claude.com/en/docs/claude-code/plugins)
+[![Marketplace](https://img.shields.io/badge/Marketplace-Available-brightgreen.svg)](https://github.com/gutitrombotto/webflow-to-self-served-page)
 
 ## 🎯 What This Plugin Does
 
@@ -25,12 +26,31 @@ When you export a Webflow site, CMS content comes as separate CSV files and the 
 
 ### Installation
 
+#### Option 1: Via Claude Code Marketplace (Recommended)
+
 ```bash
-# Add the plugin marketplace (once GitHub repo is set up)
-/plugin marketplace add filadd/webflow-to-self-served-page
+# Add the plugin marketplace
+/plugin marketplace add gutitrombotto/webflow-to-self-served-page
 
 # Install the plugin
 /plugin install webflow-to-self-served-page
+```
+
+#### Option 2: Direct from GitHub
+
+```bash
+# Clone and link the plugin
+git clone https://github.com/gutitrombotto/webflow-to-self-served-page.git
+mkdir -p ~/.claude/plugins
+ln -s "$(pwd)/webflow-to-self-served-page" ~/.claude/plugins/
+```
+
+### Verify Installation
+
+```bash
+# Check if commands are available
+/help
+# You should see: /webflow-convert, /webflow-setup, etc.
 ```
 
 ### Basic Usage
