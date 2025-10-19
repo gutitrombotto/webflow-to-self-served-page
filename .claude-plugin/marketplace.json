@@ -1,5 +1,5 @@
 {
-  "name": "Webflow to Self-Served Page",
+  "name": "webflow-plugins",
   "description": "Official marketplace for Webflow conversion plugins",
   "owner": {
     "name": "Agustin Trombotto",
@@ -15,10 +15,7 @@
         "name": "Agustin Trombotto",
         "organization": "Filadd"
       },
-      "repository": {
-        "type": "git",
-        "url": "https://github.com/gutitrombotto/webflow-to-self-served-page"
-      },
+      "repository": "https://github.com/gutitrombotto/webflow-to-self-served-page",
       "keywords": [
         "webflow",
         "cms",
